@@ -24,9 +24,14 @@ function clock() {
     if (min < 10) {
         min = "0" + d.getMinutes();
     }
+    if (hr < 10) {
+        hr = "0" + d.getHours();
+    }
     if (hr > 12) {
         hr -= 12;
     }
+    hr = (hr<10)?"0"+(d.getHours()-12):d.getHours();
+   
     var da = hr + ":" + min + ":" + sec;
     let time = document.querySelector("#time");
     time.innerHTML = da;
