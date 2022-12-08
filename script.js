@@ -76,8 +76,8 @@ function getweather(city) {
             humidity.innerHTML = response.humidity;
             max.innerHTML = response.max_temp;
             min.innerHTML = response.min_temp;
-            sunrise.innerHTML =msToTime( response.sunrise );
-            sunset.innerHTML = msToTime( response.sunset) ;
+            // sunrise.innerHTML =msToTime( response.sunrise );
+            // sunset.innerHTML = msToTime( response.sunset) ;
             // console.log(sunset);
             temp.innerHTML = response.temp;
             // wind.innerHTML = response.wind_degrees;
